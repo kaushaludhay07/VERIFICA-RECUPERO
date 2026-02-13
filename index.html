@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cassa Cinema</title>
+</head>
+<body>
+
+<h1>Cassa Cinema</h1>
+
+<h2>Calcolo Biglietto</h2>
+Età Cliente:<br>
+<input type="number" id="eta"><br><br>
+
+Giorno settimana:<br>
+<select id="giorno">
+    <option value="">--Seleziona--</option>
+    <option value="Lunedi">Lunedi</option>
+    <option value="Martedi">Martedi</option>
+    <option value="Mercoledi">Mercoledi</option>
+    <option value="Giovedi">Giovedi</option>  
+    <option value="Venerdi">Venerdi</option>
+    <option value="Sabato">Sabato</option>          
+    <option value="Domenica">Domenica</option>
+</select><br><br>
+
+<button onclick="calcolaPrezzo()">Calcola Prezzo</button>
+
+<h2 id="risultato"></h2>  
+
+<h2>Codice Promo</h2>  
+
+<input type="text" id="codice">  
+<button onclick="applicaCodice()">Applica</button>
+
+<p id="messaggioPromo"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
